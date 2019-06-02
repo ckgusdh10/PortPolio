@@ -1,0 +1,9 @@
+{
+    "hurdle1" : {"state" : "hurdle1", "x" : 1000, "y" : 480},
+    "hurdle2" : {"state" : "hurdle1", "x" : 1700, "y" : 480},
+    "hurdle3" : {"state" : "hurdle1", "x" : 2200, "y" : 480},
+    "hurdle4" : {"state" : "hurdle1", "x" : 2700, "y" : 480},
+    "hurdle5" : {"state" : "hurdle1", "x" : 4200, "y" : 480},
+    "hurdle6" : {"state" : "hurdle1", "x" : 4500, "y" : 480},
+    "hurdle7" : {"state" : "hurdle1", "x" : 5400, "y" : 480}
+}
