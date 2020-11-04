@@ -1,9 +1,0 @@
-﻿  GLSLBase.cpp
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(68): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(94): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(95): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(99): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(100): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(102): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(103): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  GLSLBase.vcxproj -> C:\Users\ckgusdh10\Documents\카카오톡 받은 파일\GLSLBase (1)\x64\Debug\GLSLBase.exe
