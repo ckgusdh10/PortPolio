@@ -31,7 +31,7 @@ void RenderScene(void)
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	
 	// Renderer Test
-	g_Renderer->Test();
+	//g_Renderer->Test();
 
 	//g_Renderer->Lecture2();
 	//g_Renderer->fillAll(0, 0, 0, 0.04);
@@ -52,7 +52,7 @@ void RenderScene(void)
 
 	
 
-	//g_Renderer->Raider(centers, g_time);
+	g_Renderer->Raider(centers, g_time);
 
 	//g_Renderer->Texture();
 	//g_Renderer->multipleTex();

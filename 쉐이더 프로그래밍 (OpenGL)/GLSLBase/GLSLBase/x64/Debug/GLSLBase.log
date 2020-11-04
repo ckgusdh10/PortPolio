@@ -1,9 +1,41 @@
-﻿  GLSLBase.cpp
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(68): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(94): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(95): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(99): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(100): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(102): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\documents\카카오톡 받은 파일\glslbase (1)\glslbase\glslbase.cpp(103): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  GLSLBase.vcxproj -> C:\Users\ckgusdh10\Documents\카카오톡 받은 파일\GLSLBase (1)\x64\Debug\GLSLBase.exe
+﻿  stdafx.cpp
+  LoadPng.cpp
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(800): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(1462): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(1466): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(1538): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(3483): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(3497): warning C4267: '인수': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(4338): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(4386): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(4466): warning C4267: '=': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\loadpng.cpp(5409): warning C4267: '초기화 중': 'size_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Renderer.cpp
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(266): warning C4838: 'double'에서 'float'(으)로의 변환에는 축소 변환이 필요합니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(266): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(930): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(931): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1166): warning C4267: '=': 'size_t'에서 'GLint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1266): warning C4101: 'newY' :참조되지 않은 지역 변수입니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1266): warning C4101: 'newX' :참조되지 않은 지역 변수입니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1368): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1395): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1467): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1487): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1511): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1848): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1869): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(1972): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(2033): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(2063): warning C4244: '인수': 'GLuint'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\renderer.cpp(2064): warning C4244: '+=': 'double'에서 'GLuint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GLSLBase.cpp
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(68): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(94): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(95): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(99): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(100): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(102): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(103): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  GLSLBase.vcxproj -> C:\Users\ckgusdh10\Desktop\새 폴더\Portfolio\쉐이더 프로그래밍 (OpenGL)\GLSLBase\x64\Debug\GLSLBase.exe
