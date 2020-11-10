@@ -52,18 +52,14 @@ void RenderScene(void)
 
 	
 
-	g_Renderer->Raider(centers, g_time);
+	//g_Renderer->Raider(centers, g_time);					// 레이더 이펙트
 
-	//g_Renderer->Texture();
 	//g_Renderer->multipleTex();
-	//g_Renderer->oneTextureAnim(g_time);
+	//g_Renderer->oneTextureAnim(g_time);					// 텍스쳐 이펙트
 
 	//g_Renderer->Texture(g_time, 3, 0.5);
-	//g_Renderer->middleTermWave(g_time);
 
-	//g_Renderer->middleFragAnim(centers, g_time);
-
-	//g_Renderer->middleWave(centers, g_time);
+	
 	//g_Renderer->Q2();
 	g_time += 0.01;
 

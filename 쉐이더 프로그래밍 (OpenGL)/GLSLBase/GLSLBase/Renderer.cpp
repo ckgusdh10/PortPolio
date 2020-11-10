@@ -93,7 +93,7 @@ void Renderer::Initialize(int windowSizeX, int windowSizeY)
 	m_RaiderShader = CompileShaders("./Shaders/Raider.vs", "./Shaders/Raider.fs");
 	m_fillAllShader = CompileShaders("./Shaders/fillAll.vs", "./Shaders/fillAll.fs");
 	m_textureShader = CompileShaders("./Shaders/texture.vs", "./Shaders/texture.fs");
-	m_middleTestShader = CompileShaders("./Shaders/middleTest.vs", "./Shaders/middleTest.fs");
+	//m_middleTestShader = CompileShaders("./Shaders/middleTest.vs", "./Shaders/middleTest.fs");
 	m_Q1shader = CompileShaders("./Shaders/Q1.vs", "./Shaders/Q1.fs");
 	m_Q2shader = CompileShaders("./Shaders/Q2.vs", "./Shaders/Q2.fs");
 
