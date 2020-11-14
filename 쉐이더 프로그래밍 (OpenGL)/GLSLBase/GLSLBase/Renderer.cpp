@@ -1992,37 +1992,6 @@ void Renderer::oneTextureAnim(float time)
 
 void Renderer::Wave()
 {
-	//glUseProgram(gShaderProgram);
-
-	//GLuint samplerTex = glGetUniformLocation(gShaderProgram, "u_Tex");
-	//glUniform1i(samplerTex, 0);
-	//glActiveTexture(GL_TEXTURE0);
-	//glBindTexture(GL_TEXTURE_2D, m_Tex_IU);
-
-	//GLuint uniformTime = glGetUniformLocation(gShaderProgram, "u_Time");
-	//glUniform1f(uniformTime, gtime);
-	//gtime += 0.005;
-	//
-	//int attrribPosition = glGetAttribLocation(gShaderProgram, "Position");
-
-	//glEnableVertexAttribArray(attrribPosition);
-
-	//glBindBuffer(GL_ARRAY_BUFFER, VBO_DummyMesh);
-	//glVertexAttribPointer(attrribPosition, 3, GL_FLOAT, GL_FALSE, 0, 0);
-
-	///*int attrribPosition = glGetAttribLocation(gShaderProgram, "Position");
-	//int attrribTexPos = glGetAttribLocation(gShaderProgram, "TexPos");
-
-	//glEnableVertexAttribArray(attrribPosition);
-	//glEnableVertexAttribArray(attrribTexPos);
-
-	//glBindBuffer(GL_ARRAY_BUFFER, VBO_DummyMesh);
-	//glVertexAttribPointer(attrribPosition, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), 0);
-	//glVertexAttribPointer(attrribTexPos, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (GLvoid*)(3 * sizeof(float)));*/
-
-
-	//glDrawArrays(GL_LINE_STRIP, 0, gDummyVertexCount);
-
 	glUseProgram(gShaderProgram);
 
 
