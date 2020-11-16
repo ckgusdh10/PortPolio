@@ -1,59 +1,45 @@
 #version 330
 
-//in vec3 a_Position;		// (a_ = attribute 명시 )
-							// in -> 입력
 
-in vec3 a_Position;		
-//in vec4 a_Color;
-
-out vec4 v_Color;
-
-uniform float u_time;
-
-uniform vec2 u_S;
-uniform vec2 u_E;
-
-mat2 rotMat;
-vec2 pos;
+in vec4 Position;
+out vec2 v_FragPos;
+uniform float u_Time;
+uniform float u_Width;
+uniform float u_Ratio;
+uniform vec2 startPos;
+uniform vec2 endPos;
 
 void main()
 {
+	float getX,getY;
+	float temp=u_Time+1;
+	vec2 dir=endPos-startPos;
+	vec2 rotateVector;
 
-	float pi = 3.141592;
 
-	vec2 newPos = vec2(-10,-10);
-
-	vec2 k = u_E - u_S;
-
-	mat2 rot = mat2(cos(pi/2),sin(pi/2), -sin(pi/2), cos(pi/2));
-
-	vec2 verti = normalize(rot *k);
-
-	if(u_time + 1 > a_Position.x)
+	if(temp>Position.x)
 	{
-		float newTime = u_time - a_Position.x;
+		float newTime=temp-Position.x;
+		newTime=fract(newTime/2)*2;
+		float angle=3.141592/2;
+		mat2 rotMat=mat2(cos(angle),sin(angle),-sin(angle),cos(angle));
+		float noise=(sin(newTime*3.141592*Position.z))* (Position.w*(newTime)/2);
+		rotateVector=rotMat* normalize(dir)*noise;
 
-		newTime = fract(newTime);
-
-		float temp = sin(newTime * 3.141592 * a_Position.y) * a_Position.z * 0.2 ;
-
-		newPos = u_S + k * newTime;
-		newPos += verti * temp;
+		getX=startPos.x+dir.x*( newTime)/2+rotateVector.x;
+		getY=startPos.y+dir.y*newTime/2+rotateVector.y;
+	}
+	else
+	{
+		getX=10;
+		getY=10;
 	}
 
-	gl_Position  = vec4
-	(
-		newPos.x ,
-		newPos.y ,
-		0,
-		1
-	);
-
 	gl_PointSize = 50;
+	gl_Position=vec4(getX,getY,0,1);
 
-
-	v_Color = vec4(1,1,1,1);
-	// 0 , 1
-	// 프래그먼트에서는 이 0 과 1 사이의 값으로 다 보간된다 !
+	v_FragPos=Position.xy;
 }
+
+
 

@@ -134,6 +134,7 @@ void Renderer::Initialize(int windowSizeX, int windowSizeY)
 	m_m4Model = m_m4ModelTranslation * m_m4ModelRotation * m_m4ModelScaling;
 
 	m_Tex_Particle = CreatePngTexture("particle4.png");
+	m_texParticle = CreatePngTexture("bubblealpha.png");
 
 	if (m_SolidRectShader > 0 && m_VBORect > 0)
 	{
@@ -353,6 +354,34 @@ void Renderer::CreateVertexBufferObjects()
 	glBindBuffer(GL_ARRAY_BUFFER, m_VBOWaveP);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(wavaPoint), wavaPoint, GL_STATIC_DRAW);
 
+	float *Points = new float[(100 + 1) * 4];
+	for (int i = 0; i <= 100; ++i) {
+		Points[i * 4 + 0] = ((float)i / (float)100)*2.0f;
+		Points[i * 4 + 1] = 0.f;
+		Points[i * 4 + 2] = rand() % 10 + .1f;
+		Points[i * 4 + 3] = rand() % 5 * .1f + .1f;
+		if ((float)rand() / (float)RAND_MAX - 0.5 > 0.0f)
+			Points[i * 4 + 2] *= -1.0f;
+	}
+	float Quad[]{
+		-1,-1,0,1,
+		-1,1,0,1,
+		1,-1,0,1,
+		-1,1,0,1,
+		1,1,0,1,
+		1,-1,0,1
+	};
+	float Point[]{
+		-1,0,rand() % 10 * 0.1,rand() % 5
+	};
+	/*glGenBuffers(1, &VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(Position), Position, GL_STATIC_DRAW);
+	*/
+
+	glGenBuffers(1, &VBO1);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO1);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(float)*pointCount * 4, Points, GL_STATIC_DRAW);
 
 
 	float fragAnim[]
@@ -1523,31 +1552,39 @@ void Renderer::Lecture8()
 void Renderer::DrawSTParticle(float sx, float sy, float tx, float ty, float time)
 {
 	glUseProgram(m_STPtclShader);
-	glEnable(GL_BLEND);
 
-	glEnableVertexAttribArray(0);
+	glEnable(GL_BLEND); //
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA); //
 
-	glBindBuffer(GL_ARRAY_BUFFER, m_Tex_Particle);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+	glEnable(GL_PROGRAM_POINT_SIZE); //
+	glEnable(GL_POINT_SPRITE); //
 
-	GLint utime = glGetUniformLocation(m_STPtclShader, "u_time");
-	GLint us = glGetUniformLocation(m_STPtclShader, "u_S");
-	GLint ue = glGetUniformLocation(m_STPtclShader, "u_E");
+	int positionAttribID = glGetAttribLocation(m_STPtclShader, "Position");
+	glEnableVertexAttribArray(positionAttribID);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO1);
+	glVertexAttribPointer(positionAttribID, 4, GL_FLOAT, GL_FALSE, 0, 0);
+	GLuint uniformTime = glGetUniformLocation(m_STPtclShader, "u_Time");
+	GLuint uniformRatio = glGetUniformLocation(m_STPtclShader, "u_Ratio");
+	GLuint uniformWidth = glGetUniformLocation(m_STPtclShader, "u_Width");
+	GLuint uniformStart = glGetUniformLocation(m_STPtclShader, "startPos");
+	GLuint uniformEnd = glGetUniformLocation(m_STPtclShader, "endPos");
 
+	glUniform1f(uniformTime, time);
+	glUniform1f(uniformRatio, .4f);//소수
+	glUniform1f(uniformWidth, 3);//큰수
+	glUniform2f(uniformStart, sx, sy);
+	glUniform2f(uniformEnd, tx, ty);
+
+	GLuint uniformSampler = glGetUniformLocation(m_STPtclShader, "u_Texture");
+	glUniform1i(uniformSampler, 0);
 
 	glActiveTexture(GL_TEXTURE0);
-	glBindTexture(GL_TEXTURE_2D, m_Tex_Particle);
+	glBindTexture(GL_TEXTURE_2D, m_texParticle);
 
-	//if (scaleFactor > 1.0f)
-	//	scaleFactor = -1.0f;
-	glUniform1f(utime, time);
-	glUniform2f(us, sx, sy);
-	glUniform2f(ue, tx, ty);
 
-	glPointSize(2);
-	glEnable(GL_PROGRAM_POINT_SIZE);
-	glEnable(GL_POINT_SPRITE);
-	glDrawArrays(GL_POINTS, 0, 500);
+	glPointSize(3);
+	glDrawArrays(GL_POINTS, 0, 100);
+	glDisableVertexAttribArray(positionAttribID);
 }
 
 void Renderer::FragAnim(float cx, float cy, float t)
@@ -2018,8 +2055,8 @@ void Renderer::Wave()
 
 
 
-	//glDrawArrays(GL_TRIANGLES, 0, gDummyVertexCount);
-	glDrawArrays(GL_LINE_STRIP, 0, gDummyVertexCount);
+	glDrawArrays(GL_TRIANGLES, 0, gDummyVertexCount);
+	//glDrawArrays(GL_LINE_STRIP, 0, gDummyVertexCount);
 }
 
 void Renderer::ParticleAnimation()

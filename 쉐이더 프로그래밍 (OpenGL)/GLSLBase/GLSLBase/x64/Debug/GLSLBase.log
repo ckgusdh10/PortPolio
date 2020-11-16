@@ -1,9 +1,9 @@
 ﻿  GLSLBase.cpp
-c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(64): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
-c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(90): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(91): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(95): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(96): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(98): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(99): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(36): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(80): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(81): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(85): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(86): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(88): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\desktop\새 폴더\portfolio\쉐이더 프로그래밍 (opengl)\glslbase\glslbase\glslbase.cpp(89): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   GLSLBase.vcxproj -> C:\Users\ckgusdh10\Desktop\새 폴더\Portfolio\쉐이더 프로그래밍 (OpenGL)\GLSLBase\x64\Debug\GLSLBase.exe

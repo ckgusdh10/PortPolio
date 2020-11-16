@@ -128,6 +128,7 @@ public:
 	GLuint m_VBOMiddleRect = 0;
 
 	GLuint m_VBOptcl = 0;
+	GLuint VBO1 = 0;
 
 	GLuint m_VBOmiddleTerm = 0;
 	GLuint m_VBOmiddleColor = 0;
@@ -166,6 +167,8 @@ public:
 	GLuint m_Tex_reroad = 0;
 
 	GLuint m_Tex_Particle = 0;
+
+	GLuint m_texParticle = 0;
 
 
 	float g_time = 0.0f;

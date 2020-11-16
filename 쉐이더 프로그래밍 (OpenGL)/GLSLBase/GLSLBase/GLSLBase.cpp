@@ -31,40 +31,30 @@ void RenderScene(void)
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	
 	// Renderer Test
-	//g_Renderer->Test();
-
-	//g_Renderer->Lecture2();
-	//g_Renderer->fillAll(0, 0, 0, 0.04);
-	//g_Renderer->Wave();
-	//g_Renderer->ParticleAnimation();
-	//g_Renderer->DrawSTParticle(0, 0, 1.0, 0.0, g_time);
-	//g_Renderer->Cube();
-	//g_Renderer->orthoProject();
-	//g_Renderer->Test1();
+	//g_Renderer->fillAll(1, 0, 0, 1);
+	
+	g_time += 0.01;
+		
 	float centers[] = { -0.5,-0.5,
 						0.5,0.5,
 						-0.5,0.5,
 						0.5,-0.5
 						};
 
-	//g_Renderer->FragAnim(mouseX, mouseY,g_time);
-	g_Renderer->Test(centers, g_time);
+	//g_Renderer->Cube();										// 큐브 (마우스로 회전 가능)
 
+	g_Renderer->DrawSTParticle(-1.0, 0, 1.0, 0.0, g_time);	// 물방울 파티클 이펙트
 	
-
-	//g_Renderer->Raider(centers, g_time);					// 레이더 이펙트
-
-	//g_Renderer->multipleTex();
-	//g_Renderer->oneTextureAnim(g_time);					// 텍스쳐 이펙트
-
-	//g_Renderer->Texture(g_time, 3, 0.5);					// 텍스쳐 타일
-
+	//g_Renderer->FragAnim(0, 0,g_time);						// 파동 이펙트
+	//g_Renderer->Test(centers, g_time);						// 물결 이펙트
+	//g_Renderer->Raider(centers, g_time);						// 레이더 이펙트
 	
-	//g_Renderer->Q2();
-	g_time += 0.01;
+	//g_Renderer->oneTextureAnim(g_time);						// 텍스쳐 이펙트
 
-	//g_Renderer->midlleTest(g_time);
-	//g_Renderer->middleTermWithColor(g_time);
+	//g_Renderer->Test1();										// 텍스쳐 
+	//g_Renderer->Texture(g_time, 3, 0.5);						// 텍스쳐 타일
+	//g_Renderer->Wave();										// 텍스쳐 웨이브
+
 	glutSwapBuffers();
 }
 
