@@ -1,6 +1,0 @@
-﻿  CMonster.cpp
-c:\users\ckgusdh10\desktop\졸작\전시\tf_client\include\cmonster.cpp(373): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-c:\users\ckgusdh10\desktop\졸작\전시\tf_client\include\cmonster.cpp(441): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-c:\users\ckgusdh10\desktop\졸작\전시\tf_client\include\cmonster.cpp(504): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
-  Camera.obj : /GL로 컴파일한 MSIL .netmodule 또는 모듈이 있습니다. /LTCG를 지정하여 링크를 다시 시작하십시오. /LTCG를 링크 명령줄에 추가하면 링커 성능이 향상됩니다.
-  TF_CLIENT.vcxproj -> C:\Users\ckgusdh10\Desktop\졸작\전시\x64\Release\TF_CLIENT.exe
