@@ -1,0 +1,4 @@
+﻿  자물쇠와 열쇠.cpp
+c:\users\ckgusdh10\source\repos\여름방학 스터디\여름방학 스터디\자물쇠와 열쇠.cpp(76): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\ckgusdh10\source\repos\여름방학 스터디\여름방학 스터디\자물쇠와 열쇠.cpp(77): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  여름방학 스터디.vcxproj -> C:\Users\ckgusdh10\source\repos\여름방학 스터디\x64\Debug\여름방학 스터디.exe
